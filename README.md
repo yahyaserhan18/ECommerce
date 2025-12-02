@@ -16,7 +16,7 @@ A modern .NET 9 Web API for e-commerce scenarios, organized with Onion Architect
 ---
 
 ## Project Structure
-
+```txt
 ECommerce.sln
 ├── Core
 │ ├── ECommerce.Domain
@@ -27,11 +27,11 @@ ECommerce.sln
 │ └── Presentation
 ├── ECommerce.Web
 └── Shared
-
+```
 
 ---
 
-## 🔑 Main Features
+## Main Features
 
 - JWT authentication for secure access control.
 - Product catalog filtering, sorting, and pagination for better discovery.
@@ -42,7 +42,7 @@ ECommerce.sln
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 - **Core:** Pure domain concerns — entities, contracts, and specifications with no outward dependencies.
 - **Infrastructure:** Implements persistence, repositories, seeding, Redis, and external integrations.
@@ -51,23 +51,16 @@ ECommerce.sln
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-1. Restore dependencies:
+1. Restore dependencies: **dotnet restore**
+2. Apply migrations in **Infrastructure Layer**
+3. Run the API: **dotnet run --project ECommerce/ECommerce.Web.csproj**
+4. Open Swagger UI: **https://localhost:7286/swagger**
 
-   ```bash
-   dotnet restore
-Apply migrations in Infrastructure Layer.
+---
 
-Run the API:
-
-dotnet run --project ECommerce/ECommerce.Web.csproj
-
-
-Open Swagger UI to explore endpoints:
-
-https://localhost:7286/swagger
-🤝 Contributing
+ ## Contributing
 
 Contributions are welcome.
 Please discuss major proposals via issues before submitting pull requests.
